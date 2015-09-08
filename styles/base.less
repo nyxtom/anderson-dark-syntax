@@ -1,0 +1,221 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(216, 189, 112, 0.33);
+}
+
+.variable.parameter.function {
+  color: #c7a095;
+}
+
+.comment, .punctuation.definition.comment {
+  color: #d8bd70;
+}
+
+.punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.string, .punctuation.definition.array {
+  color: #c7a095;
+}
+
+.none {
+  color: #c7a095;
+}
+
+.keyword.operator {
+  color: #c7a095;
+}
+
+.keyword {
+  color: #a8c1c5;
+}
+
+.variable {
+  color: #645d59;
+}
+
+.entity.name.function, .meta.require, .support.function.any-method {
+  color: #e7c6be;
+}
+
+.support.class, .entity.name.class, .entity.name.type.class {
+  color: #9ad1bc;
+}
+
+.meta.class {
+  color: #c5beba;
+}
+
+.keyword.other.special-method {
+  color: #e7c6be;
+}
+
+.storage {
+  color: #a8c1c5;
+}
+
+.support.function {
+  color: #bad4f5;
+}
+
+.string, .constant.other.symbol, .entity.other.inherited-class {
+  color: #c4c18b;
+}
+
+.constant.numeric {
+  color: #f0a4af;
+}
+
+.none {
+  color: #f0a4af;
+}
+
+.none {
+  color: #f0a4af;
+}
+
+.constant {
+  color: #f0a4af;
+}
+
+.entity.name.tag {
+  color: #645d59;
+}
+
+.entity.other.attribute-name {
+  color: #f0a4af;
+}
+
+.entity.other.attribute-name.id, .punctuation.definition.entity {
+  color: #e7c6be;
+}
+
+.meta.selector {
+  color: #a8c1c5;
+}
+
+.none {
+  color: #f0a4af;
+}
+
+.markup.heading .punctuation.definition.heading, .entity.name.section {
+  color: #e7c6be;
+}
+
+.keyword.other.unit {
+  color: #f0a4af;
+}
+
+.markup.bold, .punctuation.definition.bold {
+  font-weight: bold;
+  color: #9ad1bc;
+}
+
+.markup.italic, .punctuation.definition.italic {
+  font-style: italic;
+  color: #a8c1c5;
+}
+
+.markup.raw.inline {
+  color: #c4c18b;
+}
+
+.string.other.link {
+  color: #645d59;
+}
+
+.meta.link {
+  color: #f0a4af;
+}
+
+.markup.list {
+  color: #645d59;
+}
+
+.markup.quote {
+  color: #f0a4af;
+}
+
+.meta.separator {
+  color: #c7a095;
+  background-color: #7bb292;
+}
+
+.markup.inserted {
+  color: #c4c18b;
+}
+
+.markup.deleted {
+  color: #645d59;
+}
+
+.markup.changed {
+  color: #a8c1c5;
+}
+
+.constant.other.color {
+  color: #bad4f5;
+}
+
+.string.regexp {
+  color: #bad4f5;
+}
+
+.constant.character.escape {
+  color: #bad4f5;
+}
+
+.punctuation.section.embedded, .variable.interpolation {
+  color: #e4e4e4;
+}
+
+.invalid.illegal {
+  color: #363432;
+  background-color: #645d59;
+}
